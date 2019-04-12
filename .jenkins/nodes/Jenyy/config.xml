@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>Jenyy</name>
+  <description></description>
+  <remoteFS>/home/gamut/jenyy</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.29.4">
+    <host>172.17.0.2</host>
+    <port>22</port>
+    <credentialsId>c58d59c3-9d0f-4dac-ab01-42f8fb83b36e</credentialsId>
+    <launchTimeoutSeconds>210</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>slave1</label>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>2</int>
+          <string>JAVA_HOME</string>
+          <string>/home/gamut/jdk-11.0.2/</string>
+          <string>PATH</string>
+          <string>$PATH:/home/gamut/apache-maven-3.6.0/bin</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
+</slave>

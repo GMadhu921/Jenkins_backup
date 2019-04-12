@@ -1,0 +1,81 @@
+SSHLauncher{host='172.17.0.2', port=22, credentialsId='c58d59c3-9d0f-4dac-ab01-42f8fb83b36e', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=210, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[04/11/19 06:40:46] [SSH] Opening SSH connection to 172.17.0.2:22.
+[04/11/19 06:40:46] [SSH] SSH host key matches key in Known Hosts file. Connection will be allowed.
+[04/11/19 06:40:46] [SSH] Authentication successful.
+[04/11/19 06:40:46] [SSH] The remote user's environment is:
+BASH=/bin/bash
+BASHOPTS=cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="19" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.4.19(1)-release'
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/gamut
+HOSTNAME=0942e49416e9
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LOGNAME=gamut
+MACHTYPE=x86_64-pc-linux-gnu
+MAIL=/var/mail/gamut
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PIPESTATUS=([0]="0")
+PPID=4393
+PS4='+ '
+PWD=/home/gamut
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='172.17.0.1 51648 22'
+SSH_CONNECTION='172.17.0.1 51648 172.17.0.2 22'
+TERM=dumb
+UID=1000
+USER=gamut
+_=']'
+[04/11/19 06:40:46] [SSH] Checking java version of /home/gamut/jenyy/jdk/bin/java
+Couldn't figure out the Java version of /home/gamut/jenyy/jdk/bin/java
+bash: /home/gamut/jenyy/jdk/bin/java: No such file or directory
+
+[04/11/19 06:40:46] [SSH] Checking java version of java
+Couldn't figure out the Java version of java
+bash: java: command not found
+
+[04/11/19 06:40:46] [SSH] Checking java version of /usr/bin/java
+Couldn't figure out the Java version of /usr/bin/java
+bash: /usr/bin/java: No such file or directory
+
+[04/11/19 06:40:46] [SSH] Checking java version of /usr/java/default/bin/java
+Couldn't figure out the Java version of /usr/java/default/bin/java
+bash: /usr/java/default/bin/java: No such file or directory
+
+[04/11/19 06:40:46] [SSH] Checking java version of /usr/java/latest/bin/java
+Couldn't figure out the Java version of /usr/java/latest/bin/java
+bash: /usr/java/latest/bin/java: No such file or directory
+
+[04/11/19 06:40:46] [SSH] Checking java version of /usr/local/bin/java
+Couldn't figure out the Java version of /usr/local/bin/java
+bash: /usr/local/bin/java: No such file or directory
+
+[04/11/19 06:40:46] [SSH] Checking java version of /usr/local/java/bin/java
+Couldn't figure out the Java version of /usr/local/java/bin/java
+bash: /usr/local/java/bin/java: No such file or directory
+
+java.io.IOException: Java not found on hudson.slaves.SlaveComputer@4eec91eb. Install a Java 8 version on the Agent.
+	at hudson.plugins.sshslaves.JavaVersionChecker.resolveJava(JavaVersionChecker.java:82)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:863)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:833)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[04/11/19 06:40:46] Launch failed - cleaning up connection
+[04/11/19 06:40:46] [SSH] Connection closed.

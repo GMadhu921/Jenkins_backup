@@ -1,0 +1,10 @@
+Started on Apr 12, 2019, 6:15:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 42aee454433d498d15cc3df63872acf9014412fa (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/GMadhu921/gamutkart2.git # timeout=10
+Found 1 remote heads on https://github.com/GMadhu921/gamutkart2.git
+[poll] Latest remote head revision on refs/heads/master is: 42aee454433d498d15cc3df63872acf9014412fa - already built by 37
+Done. Took 0.23 sec
+No changes
